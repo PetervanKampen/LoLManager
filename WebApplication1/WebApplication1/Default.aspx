@@ -12,7 +12,8 @@
         <br />
         <asp:TextBox ID="passwordBox" runat="server">password</asp:TextBox>
         <br />
-        <asp:Button ID="logInButton" runat="server" Text="Log in" />
+        <br />
+        <asp:HyperLink ID="logInButton" runat="server" NavigateUrl="~/leagueSelector.aspx">Log In</asp:HyperLink>
     </form>
 </body>
 </html>
