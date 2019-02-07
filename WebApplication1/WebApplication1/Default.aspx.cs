@@ -13,15 +13,4 @@ namespace WebApplication1
         {
 
         }
-
-        protected void okButton_Click(object sender, EventArgs e)
-        {
-            string firstName = firstNameTextbox.Text;
-            string lastName = lastNameTextBox.Text;
-
-            string result = firstName + " hey " + lastName;
-
-            resultLabel.Text = result;
-        }
-    }
 }
