@@ -10,7 +10,7 @@
 namespace WebApplication1 {
     
     
-    public partial class Default {
+    public partial class teamSelector {
         
         /// <summary>
         /// form1 control.
@@ -22,30 +22,30 @@ namespace WebApplication1 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// usernameBox control.
+        /// lcsButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usernameBox;
+        protected global::System.Web.UI.WebControls.Button lcsButton;
         
         /// <summary>
-        /// passwordBox control.
+        /// lecButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwordBox;
+        protected global::System.Web.UI.WebControls.Button lecButton;
         
         /// <summary>
-        /// logInButton control.
+        /// LCK control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink logInButton;
+        protected global::System.Web.UI.WebControls.Button LCK;
     }
 }
