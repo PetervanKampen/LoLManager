@@ -1,0 +1,1 @@
+C:\Users\mumtj\Documents\LoLManager\WebApplication1\WebApplication1\obj\Release\LoL Manager.csproj.CoreCompileInputs.cache
