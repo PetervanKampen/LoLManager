@@ -63,6 +63,76 @@ namespace LoLManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _100T {
+            get {
+                object obj = ResourceManager.GetObject("100T", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap C9 {
+            get {
+                object obj = ResourceManager.GetObject("C9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CLG {
+            get {
+                object obj = ResourceManager.GetObject("CLG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clutch_Gaming {
+            get {
+                object obj = ResourceManager.GetObject("Clutch Gaming", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Echo_Fox {
+            get {
+                object obj = ResourceManager.GetObject("Echo Fox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FlyQuest {
+            get {
+                object obj = ResourceManager.GetObject("FlyQuest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Golden_Guardians {
+            get {
+                object obj = ResourceManager.GetObject("Golden_Guardians", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lcs_Logo {
             get {
                 object obj = ResourceManager.GetObject("lcs Logo", resourceCulture);
@@ -76,6 +146,36 @@ namespace LoLManager.Properties {
         internal static System.Drawing.Bitmap lec_Logo {
             get {
                 object obj = ResourceManager.GetObject("lec Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OpTic_Gaming {
+            get {
+                object obj = ResourceManager.GetObject("OpTic_Gaming", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Team_Liquid {
+            get {
+                object obj = ResourceManager.GetObject("Team_Liquid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Team_SoloMid {
+            get {
+                object obj = ResourceManager.GetObject("Team_SoloMid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

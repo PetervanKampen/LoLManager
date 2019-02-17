@@ -9,5 +9,6 @@ namespace LoLManager
     class Data
     {
         public String leagueName;
+        public String teamName;
     }
 }
