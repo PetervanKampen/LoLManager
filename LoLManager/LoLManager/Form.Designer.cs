@@ -124,9 +124,9 @@
             this.teamInfoPanel.Controls.Add(this.teamNamesLabel);
             this.teamInfoPanel.Controls.Add(this.rollIndicator);
             this.teamInfoPanel.Controls.Add(this.infoTeamPicture);
-            this.teamInfoPanel.Location = new System.Drawing.Point(499, 49);
+            this.teamInfoPanel.Location = new System.Drawing.Point(603, 51);
             this.teamInfoPanel.Name = "teamInfoPanel";
-            this.teamInfoPanel.Size = new System.Drawing.Size(406, 501);
+            this.teamInfoPanel.Size = new System.Drawing.Size(302, 501);
             this.teamInfoPanel.TabIndex = 11;
             this.teamInfoPanel.Visible = false;
             // 
@@ -134,7 +134,7 @@
             // 
             this.teamNamesLabel.AutoSize = true;
             this.teamNamesLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamNamesLabel.Location = new System.Drawing.Point(123, 232);
+            this.teamNamesLabel.Location = new System.Drawing.Point(123, 258);
             this.teamNamesLabel.Name = "teamNamesLabel";
             this.teamNamesLabel.Size = new System.Drawing.Size(115, 189);
             this.teamNamesLabel.TabIndex = 2;
@@ -144,7 +144,7 @@
             // 
             this.rollIndicator.AutoSize = true;
             this.rollIndicator.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rollIndicator.Location = new System.Drawing.Point(15, 232);
+            this.rollIndicator.Location = new System.Drawing.Point(15, 258);
             this.rollIndicator.Name = "rollIndicator";
             this.rollIndicator.Size = new System.Drawing.Size(93, 189);
             this.rollIndicator.TabIndex = 1;

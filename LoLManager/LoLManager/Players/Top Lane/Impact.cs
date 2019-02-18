@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LoLManager
 {
-    class Hauntzer : Player
+    class Impact : Player
     {
-        public Hauntzer()
+        public Impact()
         {
-            name = "Hauntzer";
+            name = "Impact";
         }
     }
 }

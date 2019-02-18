@@ -29,6 +29,8 @@ namespace LoLManager
             fly = new FlyQuest();
             ggs = new Golden_Guardians();
             opt = new OpTic_Gaming();
+            tl = new Team_Liquid();
+            tsm = new Team_SoloMid();
         }
     }
 }
