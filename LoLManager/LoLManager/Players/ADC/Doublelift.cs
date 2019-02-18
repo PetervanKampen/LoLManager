@@ -11,6 +11,7 @@ namespace LoLManager
         public Doublelift()
         {
             name = "Doublelift";
+            roll = "AD Carry";
         }
     }
 }

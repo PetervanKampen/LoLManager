@@ -11,6 +11,7 @@ namespace LoLManager
         public Bjergsen()
         {
             name = "Bjergsen";
+            roll = "Mid Lane";
         }
     }
 }

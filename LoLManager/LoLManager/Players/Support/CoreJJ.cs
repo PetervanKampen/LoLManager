@@ -11,6 +11,7 @@ namespace LoLManager
         public CoreJJ()
         {
             name = "CoreJJ";
+            roll = "Support";
         }
     }
 }

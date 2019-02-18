@@ -11,6 +11,7 @@ namespace LoLManager
         public Apollo()
         {
             name = "Apollo";
+            roll = "AD Carry";
         }
     }
 }

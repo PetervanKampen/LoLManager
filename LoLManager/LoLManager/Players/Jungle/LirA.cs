@@ -11,6 +11,7 @@ namespace LoLManager
         public LirA()
         {
             name = "LirA";
+            roll = "Jungle";
         }
     }
 }

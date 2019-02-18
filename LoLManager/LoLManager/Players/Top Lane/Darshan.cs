@@ -11,6 +11,7 @@ namespace LoLManager
         public Darshan()
         {
             name = "Darshan";
+            roll = "Top Lane";
         }
     }
 }

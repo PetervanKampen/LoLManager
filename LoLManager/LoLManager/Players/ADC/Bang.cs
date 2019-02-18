@@ -11,6 +11,7 @@ namespace LoLManager
         public Bang()
         {
             name = "Bang";
+            roll = "AD Carry";
         }
     }
 }

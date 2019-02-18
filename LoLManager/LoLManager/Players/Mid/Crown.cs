@@ -11,6 +11,7 @@ namespace LoLManager
         public Crown()
         {
             name = "Crown";
+            roll = "Mid Lane";
         }
     }
 }

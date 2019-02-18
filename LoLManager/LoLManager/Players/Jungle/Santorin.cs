@@ -11,6 +11,7 @@ namespace LoLManager
         public Santorin()
         {
             name = "Santorin";
+            roll = "Jungle";
         }
     }
 }

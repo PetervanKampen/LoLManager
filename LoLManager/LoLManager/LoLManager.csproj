@@ -191,7 +191,36 @@
   <ItemGroup>
     <None Include="Images\Team_SoloMid.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Images\100TJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\C9Jersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CGJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CLGJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Echo FoxJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\FlyQuestJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Golden_GuardiansJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\OpTic_GamingJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Team_LiquidJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Team_SoloMidJersey.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

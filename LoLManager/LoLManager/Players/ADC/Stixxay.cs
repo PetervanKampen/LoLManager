@@ -11,6 +11,7 @@ namespace LoLManager
         public Stixxay()
         {
             name = "Stixxay";
+            roll = "AD Carry";
         }
     }
 }

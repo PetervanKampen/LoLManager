@@ -12,11 +12,16 @@ namespace LoLManager
         {
             teamName = "Cloud 9";
             logo = global::LoLManager.Properties.Resources.C9;
+            jersey = global::LoLManager.Properties.Resources.C9Jersey;
+            money = 15000;
+
+
             topLane = new Licorice();
             jungle = new Svenskeren();
             mid = new Nisqy();
             adc = new Sneaky();
             support = new Zeyzal();
+
             coach = new Reapered();
         }
     }

@@ -24,6 +24,13 @@ namespace LoLManager
         public void initOverview()
         {
             teamNameLabel.Text = data.selectedTeam.teamName;
+            if(data.selectedTeam.teamName.Length > 12)
+            {
+                teamNameLabel.Font = new System.Drawing.Font("Times New Roman", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            }
+            teamJerseyImage.BackgroundImage = data.selectedTeam.jersey;
+            moneyLabel.Text = "$"+data.selectedTeam.money.ToString();
+            upcomingLogoA.BackgroundImage = data.selectedTeam.logo;
         }
 
         public void updateTeamSelectInfo()
@@ -54,76 +61,66 @@ namespace LoLManager
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.overviewPanel.Visible = false;
+            System.Windows.Forms.Application.Exit();
         }
 
         private void ThievesLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.thieves;
-
             updateTeamSelectInfo();
         }
 
         private void C9Logo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.c9;
-
             updateTeamSelectInfo();     
         }
 
         private void CGLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.cg;
-
             updateTeamSelectInfo();
         }
 
         private void CLGLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.clg;
-
             updateTeamSelectInfo();
         }
 
         private void EchoFoxLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.efx;
-
             updateTeamSelectInfo();
         }
 
         private void FlyQLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.fly;
-
             updateTeamSelectInfo();
         }
 
         private void GoldenGLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.ggs;
-
             updateTeamSelectInfo();
         }
 
         private void OpticLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.opt;
-
             updateTeamSelectInfo();
         }
 
         private void TLLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.tl;
-
             updateTeamSelectInfo();
         }
 
         private void TSMLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.tsm;
-
             updateTeamSelectInfo();
 
         }
@@ -133,6 +130,11 @@ namespace LoLManager
             initOverview();
             this.overviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.overviewPanel.Visible = true;
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            homePanel.Visible = true;
         }
     }
 }

@@ -11,6 +11,7 @@ namespace LoLManager
         public PowerOfEvil()
         {
             name = "PowerOfEvil";
+            roll = "Mid Lane";
         }
     }
 }

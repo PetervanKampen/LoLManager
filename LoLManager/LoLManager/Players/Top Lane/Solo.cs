@@ -11,6 +11,7 @@ namespace LoLManager
         public Solo()
         {
             name = "Solo";
+            roll = "Top Lane";
         }
     }
 }

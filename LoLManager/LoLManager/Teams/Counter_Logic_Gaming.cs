@@ -10,13 +10,18 @@ namespace LoLManager
     {
         public Counter_Logic_Gaming()
         {
-            teamName = "Counter Logic Gaming";
+            teamName = "Counter Logic\nGaming";
             logo = global::LoLManager.Properties.Resources.CLG;
+            jersey = global::LoLManager.Properties.Resources.CLGJersey;
+            money = 10000;
+
+
             topLane = new Darshan();
             jungle = new Wiggily();
             mid = new PowerOfEvil();
             adc = new Stixxay();
             support = new Biofrost();
+
             coach = new Weldon();
         }
     }

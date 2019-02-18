@@ -12,11 +12,16 @@ namespace LoLManager
         {
             teamName = "Clutch Gaming";
             logo = global::LoLManager.Properties.Resources.Clutch_Gaming;
+            jersey = global::LoLManager.Properties.Resources.CGJersey;
+            money = 10000;
+
+
             topLane = new Huni();
             jungle = new LirA();
             mid = new Damonte();
             adc = new Piglet();
             support = new Vulcan();
+
             coach = new mcscrag();
         }
     }

@@ -11,6 +11,7 @@ namespace LoLManager
         public Big()
         {
             name = "Big";
+            roll = "Support";
         }
     }
 }

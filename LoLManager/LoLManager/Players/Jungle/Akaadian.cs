@@ -11,6 +11,7 @@ namespace LoLManager
         public Akaadian()
         {
             name = "Akaadian";
+            roll = "Jungle";
         }
     }
 }

@@ -11,6 +11,7 @@ namespace LoLManager
         public Huni()
         {
             name = "Huni";
+            roll = "Top Lane";
         }
     }
 }

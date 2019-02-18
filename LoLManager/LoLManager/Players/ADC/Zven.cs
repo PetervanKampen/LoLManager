@@ -11,6 +11,7 @@ namespace LoLManager
         public Zven()
         {
             name = "Zven";
+            roll = "AD Carry";
         }
     }
 }

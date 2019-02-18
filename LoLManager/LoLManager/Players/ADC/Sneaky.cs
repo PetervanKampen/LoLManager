@@ -11,6 +11,7 @@ namespace LoLManager
         public Sneaky()
         {
             name = "Sneaky";
+            roll = "AD Carry";
         }
     }
 }

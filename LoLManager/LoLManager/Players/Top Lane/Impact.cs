@@ -11,6 +11,7 @@ namespace LoLManager
         public Impact()
         {
             name = "Impact";
+            roll = "Top Lane";
         }
     }
 }

@@ -11,6 +11,7 @@ namespace LoLManager
         public Ssumday()
         {
             name = "Ssumday";
+            roll = "Top Lane";
         }
     }
 }

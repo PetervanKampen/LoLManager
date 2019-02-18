@@ -12,11 +12,16 @@ namespace LoLManager
         {
             teamName = "Team Liquid";
             logo = global::LoLManager.Properties.Resources.Team_Liquid;
+            jersey = global::LoLManager.Properties.Resources.Team_LiquidJersey;
+            money = 10000;
+
+
             topLane = new Impact();
             jungle = new Xmithie();
             mid = new Jensen();
             adc = new Doublelift();
             support = new CoreJJ();
+
             coach = new Cain();
         }
     }

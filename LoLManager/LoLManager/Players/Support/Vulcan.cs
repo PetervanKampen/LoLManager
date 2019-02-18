@@ -11,6 +11,7 @@ namespace LoLManager
         public Vulcan()
         {
             name = "Vulcan";
+            roll = "Support";
         }
     }
 }

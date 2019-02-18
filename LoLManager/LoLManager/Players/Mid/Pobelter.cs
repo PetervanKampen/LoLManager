@@ -11,6 +11,7 @@ namespace LoLManager
         public Pobelter()
         {
             name = "Pobelter";
+            roll = "Mid Lane";
         }
     }
 }

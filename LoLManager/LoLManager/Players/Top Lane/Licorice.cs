@@ -11,6 +11,7 @@ namespace LoLManager
         public Licorice()
         {
             name = "Licorice";
+            roll = "Top Lane";
         }
     }
 }

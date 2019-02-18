@@ -11,6 +11,7 @@ namespace LoLManager
         public Anda()
         {
             name = "Anda";
+            roll = "Jungle";
         }
     }
 }

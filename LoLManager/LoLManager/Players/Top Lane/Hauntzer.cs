@@ -11,6 +11,7 @@ namespace LoLManager
         public Hauntzer()
         {
             name = "Hauntzer";
+            roll = "Top Lane";
         }
     }
 }

@@ -11,6 +11,7 @@ namespace LoLManager
         public Svenskeren()
         {
             name = "Svenskeren";
+            roll = "Jungle";
         }
     }
 }

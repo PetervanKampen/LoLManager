@@ -11,6 +11,7 @@ namespace LoLManager
         public Meteos()
         {
             name = "Meteos";
+            roll = "Jungle";
         }
     }
 }

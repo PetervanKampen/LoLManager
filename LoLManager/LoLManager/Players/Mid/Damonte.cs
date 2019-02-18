@@ -11,6 +11,7 @@ namespace LoLManager
         public Damonte()
         {
             name = "Damonte";
+            roll = "Mid Lane";
         }
     }
 }

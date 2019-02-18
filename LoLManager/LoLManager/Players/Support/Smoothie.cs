@@ -11,6 +11,7 @@ namespace LoLManager
         public Smoothie()
         {
             name = "Smoothie";
+            roll = "Support";
         }
     }
 }

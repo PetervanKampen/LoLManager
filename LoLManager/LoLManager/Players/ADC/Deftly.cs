@@ -11,6 +11,7 @@ namespace LoLManager
         public Deftly()
         {
             name = "Deftly";
+            roll = "AD Carry";
         }
     }
 }

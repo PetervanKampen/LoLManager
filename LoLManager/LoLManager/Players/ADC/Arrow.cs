@@ -11,6 +11,7 @@ namespace LoLManager
         public Arrow()
         {
             name = "Arrow";
+            roll = "AD Carry";
         }
     }
 }

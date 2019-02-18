@@ -11,6 +11,7 @@ namespace LoLManager
         public Zeyzal()
         {
             name = "Zeyzal";
+            roll = "Support";
         }
     }
 }

@@ -11,6 +11,7 @@ namespace LoLManager
         public Wiggily()
         {
             name = "Wiggily";
+            roll = "Jungle";
         }
     }
 }

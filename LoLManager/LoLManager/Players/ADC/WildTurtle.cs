@@ -11,6 +11,7 @@ namespace LoLManager
         public WildTurtle()
         {
             name = "WildTurtle";
+            roll = "AD Carry";
         }
     }
 }

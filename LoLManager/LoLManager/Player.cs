@@ -9,5 +9,6 @@ namespace LoLManager
     class Player
     {
         public String name;
+        public String roll;
     }
 }

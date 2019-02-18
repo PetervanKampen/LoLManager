@@ -30,6 +30,24 @@
         {
             this.selectionPanel = new System.Windows.Forms.Panel();
             this.lcsSelectorPanel = new System.Windows.Forms.Panel();
+            this.overviewPanel = new System.Windows.Forms.Panel();
+            this.homePanel = new System.Windows.Forms.Panel();
+            this.upcomingLabel = new System.Windows.Forms.Label();
+            this.upcomingLabelB = new System.Windows.Forms.PictureBox();
+            this.upcomingLogoA = new System.Windows.Forms.PictureBox();
+            this.vsLabel = new System.Windows.Forms.Label();
+            this.strategyButton = new System.Windows.Forms.Button();
+            this.scheduleButton = new System.Windows.Forms.Button();
+            this.standingsButton = new System.Windows.Forms.Button();
+            this.homeButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.financesButton = new System.Windows.Forms.Button();
+            this.moneyLabel = new System.Windows.Forms.Label();
+            this.teamJerseyImage = new System.Windows.Forms.PictureBox();
+            this.teamNameLabel = new System.Windows.Forms.Label();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.upcomingGameButton = new System.Windows.Forms.Button();
+            this.nameColorHolder = new System.Windows.Forms.PictureBox();
             this.proceedButton = new System.Windows.Forms.Button();
             this.teamInfoPanel = new System.Windows.Forms.Panel();
             this.teamNamesLabel = new System.Windows.Forms.Label();
@@ -51,11 +69,14 @@
             this.lecLabel = new System.Windows.Forms.Label();
             this.lecPicture = new System.Windows.Forms.PictureBox();
             this.prompter = new System.Windows.Forms.Label();
-            this.overviewPanel = new System.Windows.Forms.Panel();
-            this.teamNameLabel = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.selectionPanel.SuspendLayout();
             this.lcsSelectorPanel.SuspendLayout();
+            this.overviewPanel.SuspendLayout();
+            this.homePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upcomingLabelB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upcomingLogoA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teamJerseyImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nameColorHolder)).BeginInit();
             this.teamInfoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infoTeamPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TSMLogo)).BeginInit();
@@ -70,7 +91,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ThievesLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcsPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lecPicture)).BeginInit();
-            this.overviewPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // selectionPanel
@@ -89,6 +109,7 @@
             // lcsSelectorPanel
             // 
             this.lcsSelectorPanel.BackColor = System.Drawing.Color.Transparent;
+            this.lcsSelectorPanel.Controls.Add(this.overviewPanel);
             this.lcsSelectorPanel.Controls.Add(this.proceedButton);
             this.lcsSelectorPanel.Controls.Add(this.teamInfoPanel);
             this.lcsSelectorPanel.Controls.Add(this.backButton);
@@ -102,19 +123,241 @@
             this.lcsSelectorPanel.Controls.Add(this.CGLogo);
             this.lcsSelectorPanel.Controls.Add(this.C9Logo);
             this.lcsSelectorPanel.Controls.Add(this.ThievesLogo);
-            this.lcsSelectorPanel.Location = new System.Drawing.Point(9, 10);
+            this.lcsSelectorPanel.Location = new System.Drawing.Point(0, 0);
             this.lcsSelectorPanel.Name = "lcsSelectorPanel";
             this.lcsSelectorPanel.Size = new System.Drawing.Size(1012, 611);
             this.lcsSelectorPanel.TabIndex = 6;
             this.lcsSelectorPanel.Visible = false;
             // 
+            // overviewPanel
+            // 
+            this.overviewPanel.BackColor = System.Drawing.Color.Transparent;
+            this.overviewPanel.Controls.Add(this.homePanel);
+            this.overviewPanel.Controls.Add(this.strategyButton);
+            this.overviewPanel.Controls.Add(this.scheduleButton);
+            this.overviewPanel.Controls.Add(this.standingsButton);
+            this.overviewPanel.Controls.Add(this.homeButton);
+            this.overviewPanel.Controls.Add(this.button1);
+            this.overviewPanel.Controls.Add(this.financesButton);
+            this.overviewPanel.Controls.Add(this.moneyLabel);
+            this.overviewPanel.Controls.Add(this.teamJerseyImage);
+            this.overviewPanel.Controls.Add(this.teamNameLabel);
+            this.overviewPanel.Controls.Add(this.exitButton);
+            this.overviewPanel.Controls.Add(this.upcomingGameButton);
+            this.overviewPanel.Controls.Add(this.nameColorHolder);
+            this.overviewPanel.Location = new System.Drawing.Point(0, 0);
+            this.overviewPanel.Name = "overviewPanel";
+            this.overviewPanel.Size = new System.Drawing.Size(1012, 611);
+            this.overviewPanel.TabIndex = 1;
+            this.overviewPanel.Visible = false;
+            // 
+            // homePanel
+            // 
+            this.homePanel.Controls.Add(this.upcomingLabel);
+            this.homePanel.Controls.Add(this.upcomingLabelB);
+            this.homePanel.Controls.Add(this.upcomingLogoA);
+            this.homePanel.Controls.Add(this.vsLabel);
+            this.homePanel.Location = new System.Drawing.Point(200, 67);
+            this.homePanel.Name = "homePanel";
+            this.homePanel.Size = new System.Drawing.Size(811, 543);
+            this.homePanel.TabIndex = 16;
+            this.homePanel.Visible = false;
+            // 
+            // upcomingLabel
+            // 
+            this.upcomingLabel.AutoSize = true;
+            this.upcomingLabel.BackColor = System.Drawing.Color.Transparent;
+            this.upcomingLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.upcomingLabel.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upcomingLabel.Location = new System.Drawing.Point(44, 17);
+            this.upcomingLabel.Name = "upcomingLabel";
+            this.upcomingLabel.Size = new System.Drawing.Size(233, 36);
+            this.upcomingLabel.TabIndex = 5;
+            this.upcomingLabel.Text = "Upcoming Match";
+            this.upcomingLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // upcomingLabelB
+            // 
+            this.upcomingLabelB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.upcomingLabelB.Location = new System.Drawing.Point(192, 61);
+            this.upcomingLabelB.Name = "upcomingLabelB";
+            this.upcomingLabelB.Size = new System.Drawing.Size(105, 90);
+            this.upcomingLabelB.TabIndex = 8;
+            this.upcomingLabelB.TabStop = false;
+            // 
+            // upcomingLogoA
+            // 
+            this.upcomingLogoA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.upcomingLogoA.Location = new System.Drawing.Point(19, 61);
+            this.upcomingLogoA.Name = "upcomingLogoA";
+            this.upcomingLogoA.Size = new System.Drawing.Size(105, 90);
+            this.upcomingLogoA.TabIndex = 6;
+            this.upcomingLogoA.TabStop = false;
+            // 
+            // vsLabel
+            // 
+            this.vsLabel.AutoSize = true;
+            this.vsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.vsLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.vsLabel.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vsLabel.Location = new System.Drawing.Point(130, 84);
+            this.vsLabel.Name = "vsLabel";
+            this.vsLabel.Size = new System.Drawing.Size(56, 36);
+            this.vsLabel.TabIndex = 7;
+            this.vsLabel.Text = "VS";
+            this.vsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // strategyButton
+            // 
+            this.strategyButton.BackColor = System.Drawing.Color.LightBlue;
+            this.strategyButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.strategyButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.strategyButton.Location = new System.Drawing.Point(818, 0);
+            this.strategyButton.Name = "strategyButton";
+            this.strategyButton.Size = new System.Drawing.Size(194, 70);
+            this.strategyButton.TabIndex = 15;
+            this.strategyButton.Text = "Strategy";
+            this.strategyButton.UseVisualStyleBackColor = false;
+            // 
+            // scheduleButton
+            // 
+            this.scheduleButton.BackColor = System.Drawing.Color.LightBlue;
+            this.scheduleButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.scheduleButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scheduleButton.Location = new System.Drawing.Point(612, 0);
+            this.scheduleButton.Name = "scheduleButton";
+            this.scheduleButton.Size = new System.Drawing.Size(200, 70);
+            this.scheduleButton.TabIndex = 14;
+            this.scheduleButton.Text = "Schedule";
+            this.scheduleButton.UseVisualStyleBackColor = false;
+            // 
+            // standingsButton
+            // 
+            this.standingsButton.BackColor = System.Drawing.Color.LightBlue;
+            this.standingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.standingsButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.standingsButton.Location = new System.Drawing.Point(406, 0);
+            this.standingsButton.Name = "standingsButton";
+            this.standingsButton.Size = new System.Drawing.Size(200, 70);
+            this.standingsButton.TabIndex = 13;
+            this.standingsButton.Text = "Standings";
+            this.standingsButton.UseVisualStyleBackColor = false;
+            // 
+            // homeButton
+            // 
+            this.homeButton.BackColor = System.Drawing.Color.LightBlue;
+            this.homeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.homeButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeButton.Location = new System.Drawing.Point(206, 0);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(194, 70);
+            this.homeButton.TabIndex = 12;
+            this.homeButton.Text = "Home";
+            this.homeButton.UseVisualStyleBackColor = false;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(0, 389);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 70);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Staff";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // financesButton
+            // 
+            this.financesButton.BackColor = System.Drawing.Color.LightBlue;
+            this.financesButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.financesButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.financesButton.Location = new System.Drawing.Point(0, 465);
+            this.financesButton.Name = "financesButton";
+            this.financesButton.Size = new System.Drawing.Size(200, 70);
+            this.financesButton.TabIndex = 9;
+            this.financesButton.Text = "Finances";
+            this.financesButton.UseVisualStyleBackColor = false;
+            // 
+            // moneyLabel
+            // 
+            this.moneyLabel.AutoSize = true;
+            this.moneyLabel.BackColor = System.Drawing.Color.LightBlue;
+            this.moneyLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.moneyLabel.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moneyLabel.Location = new System.Drawing.Point(3, 269);
+            this.moneyLabel.Name = "moneyLabel";
+            this.moneyLabel.Size = new System.Drawing.Size(135, 36);
+            this.moneyLabel.TabIndex = 4;
+            this.moneyLabel.Text = "$Money$";
+            this.moneyLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // teamJerseyImage
+            // 
+            this.teamJerseyImage.BackColor = System.Drawing.Color.LightBlue;
+            this.teamJerseyImage.BackgroundImage = global::LoLManager.Properties.Resources.C9Jersey;
+            this.teamJerseyImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.teamJerseyImage.Location = new System.Drawing.Point(0, 0);
+            this.teamJerseyImage.Name = "teamJerseyImage";
+            this.teamJerseyImage.Size = new System.Drawing.Size(200, 200);
+            this.teamJerseyImage.TabIndex = 2;
+            this.teamJerseyImage.TabStop = false;
+            // 
+            // teamNameLabel
+            // 
+            this.teamNameLabel.AutoSize = true;
+            this.teamNameLabel.BackColor = System.Drawing.Color.LightBlue;
+            this.teamNameLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.teamNameLabel.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teamNameLabel.Location = new System.Drawing.Point(3, 203);
+            this.teamNameLabel.Name = "teamNameLabel";
+            this.teamNameLabel.Size = new System.Drawing.Size(131, 33);
+            this.teamNameLabel.TabIndex = 1;
+            this.teamNameLabel.Text = "teamname";
+            this.teamNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // exitButton
+            // 
+            this.exitButton.BackColor = System.Drawing.Color.LightBlue;
+            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exitButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.Location = new System.Drawing.Point(0, 541);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(200, 70);
+            this.exitButton.TabIndex = 0;
+            this.exitButton.Text = "Exit Game";
+            this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // upcomingGameButton
+            // 
+            this.upcomingGameButton.BackColor = System.Drawing.Color.LightBlue;
+            this.upcomingGameButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.upcomingGameButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upcomingGameButton.Location = new System.Drawing.Point(0, 313);
+            this.upcomingGameButton.Name = "upcomingGameButton";
+            this.upcomingGameButton.Size = new System.Drawing.Size(200, 70);
+            this.upcomingGameButton.TabIndex = 11;
+            this.upcomingGameButton.Text = "Play Upcoming Game";
+            this.upcomingGameButton.UseVisualStyleBackColor = false;
+            // 
+            // nameColorHolder
+            // 
+            this.nameColorHolder.BackColor = System.Drawing.Color.LightBlue;
+            this.nameColorHolder.Location = new System.Drawing.Point(0, 200);
+            this.nameColorHolder.Name = "nameColorHolder";
+            this.nameColorHolder.Size = new System.Drawing.Size(200, 411);
+            this.nameColorHolder.TabIndex = 3;
+            this.nameColorHolder.TabStop = false;
+            // 
             // proceedButton
             // 
-            this.proceedButton.Location = new System.Drawing.Point(931, 575);
+            this.proceedButton.Location = new System.Drawing.Point(774, 575);
             this.proceedButton.Name = "proceedButton";
-            this.proceedButton.Size = new System.Drawing.Size(75, 23);
+            this.proceedButton.Size = new System.Drawing.Size(131, 23);
             this.proceedButton.TabIndex = 12;
-            this.proceedButton.Text = "proceed";
+            this.proceedButton.Text = "Click here to proceed";
             this.proceedButton.UseVisualStyleBackColor = true;
             this.proceedButton.Click += new System.EventHandler(this.proceedButton_Click);
             // 
@@ -162,7 +405,7 @@
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(830, 575);
+            this.backButton.Location = new System.Drawing.Point(623, 575);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(75, 23);
             this.backButton.TabIndex = 10;
@@ -256,7 +499,7 @@
             this.CLGLogo.InitialImage = global::LoLManager.Properties.Resources._100T;
             this.CLGLogo.Location = new System.Drawing.Point(30, 373);
             this.CLGLogo.Name = "CLGLogo";
-            this.CLGLogo.Size = new System.Drawing.Size(100, 80);
+            this.CLGLogo.Size = new System.Drawing.Size(118, 80);
             this.CLGLogo.TabIndex = 3;
             this.CLGLogo.TabStop = false;
             this.CLGLogo.Click += new System.EventHandler(this.CLGLogo_Click);
@@ -282,7 +525,7 @@
             this.C9Logo.InitialImage = global::LoLManager.Properties.Resources._100T;
             this.C9Logo.Location = new System.Drawing.Point(30, 157);
             this.C9Logo.Name = "C9Logo";
-            this.C9Logo.Size = new System.Drawing.Size(100, 80);
+            this.C9Logo.Size = new System.Drawing.Size(118, 80);
             this.C9Logo.TabIndex = 1;
             this.C9Logo.TabStop = false;
             this.C9Logo.Click += new System.EventHandler(this.C9Logo_Click);
@@ -359,50 +602,27 @@
             this.prompter.TabIndex = 0;
             this.prompter.Text = "Choose your League!";
             // 
-            // overviewPanel
-            // 
-            this.overviewPanel.BackColor = System.Drawing.Color.Transparent;
-            this.overviewPanel.Controls.Add(this.teamNameLabel);
-            this.overviewPanel.Controls.Add(this.button2);
-            this.overviewPanel.Location = new System.Drawing.Point(23, 656);
-            this.overviewPanel.Name = "overviewPanel";
-            this.overviewPanel.Size = new System.Drawing.Size(1012, 611);
-            this.overviewPanel.TabIndex = 1;
-            this.overviewPanel.Visible = false;
-            // 
-            // teamNameLabel
-            // 
-            this.teamNameLabel.AutoSize = true;
-            this.teamNameLabel.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamNameLabel.Location = new System.Drawing.Point(23, 20);
-            this.teamNameLabel.Name = "teamNameLabel";
-            this.teamNameLabel.Size = new System.Drawing.Size(141, 36);
-            this.teamNameLabel.TabIndex = 1;
-            this.teamNameLabel.Text = "teamname";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(911, 564);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1105, 1061);
-            this.Controls.Add(this.overviewPanel);
             this.Controls.Add(this.selectionPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form";
             this.Text = "Form1";
             this.selectionPanel.ResumeLayout(false);
             this.selectionPanel.PerformLayout();
             this.lcsSelectorPanel.ResumeLayout(false);
+            this.overviewPanel.ResumeLayout(false);
+            this.overviewPanel.PerformLayout();
+            this.homePanel.ResumeLayout(false);
+            this.homePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upcomingLabelB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upcomingLogoA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teamJerseyImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nameColorHolder)).EndInit();
             this.teamInfoPanel.ResumeLayout(false);
             this.teamInfoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infoTeamPicture)).EndInit();
@@ -418,8 +638,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ThievesLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcsPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lecPicture)).EndInit();
-            this.overviewPanel.ResumeLayout(false);
-            this.overviewPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -465,13 +683,28 @@
         private System.Windows.Forms.PictureBox C9Logo;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Panel overviewPanel;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label teamNameLabel;
         private System.Windows.Forms.Panel teamInfoPanel;
         private System.Windows.Forms.Label rollIndicator;
         private System.Windows.Forms.PictureBox infoTeamPicture;
         private System.Windows.Forms.Label teamNamesLabel;
         private System.Windows.Forms.Button proceedButton;
+        private System.Windows.Forms.PictureBox teamJerseyImage;
+        private System.Windows.Forms.PictureBox nameColorHolder;
+        private System.Windows.Forms.Label moneyLabel;
+        private System.Windows.Forms.PictureBox upcomingLabelB;
+        private System.Windows.Forms.Label vsLabel;
+        private System.Windows.Forms.PictureBox upcomingLogoA;
+        private System.Windows.Forms.Label upcomingLabel;
+        private System.Windows.Forms.Button upcomingGameButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button financesButton;
+        private System.Windows.Forms.Button strategyButton;
+        private System.Windows.Forms.Button scheduleButton;
+        private System.Windows.Forms.Button standingsButton;
+        private System.Windows.Forms.Button homeButton;
+        private System.Windows.Forms.Panel homePanel;
     }
 }
 

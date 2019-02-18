@@ -12,11 +12,16 @@ namespace LoLManager
         {
             teamName = "OpTic Gaming";
             logo = global::LoLManager.Properties.Resources.OpTic_Gaming;
+            jersey = global::LoLManager.Properties.Resources.OpTic_GamingJersey;
+            money = 10000;
+
+
             topLane = new Dhokla();
             jungle = new Meteos();
             mid = new Crown();
             adc = new Arrow();
             support = new Big();
+
             coach = new Zaboutine();
         }
     }

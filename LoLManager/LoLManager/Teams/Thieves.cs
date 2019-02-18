@@ -12,11 +12,16 @@ namespace LoLManager
         {
             teamName = "100 Thieves";
             logo = global::LoLManager.Properties.Resources._100T;
+            jersey = global::LoLManager.Properties.Resources._100TJersey;
+            money = 10000;
+
+
             topLane = new Ssumday();
             jungle = new Anda();
             mid = new Huhi();
             adc = new Bang();
             support = new Aphromoo();
+
             coach = new Prolly();
         }
     }

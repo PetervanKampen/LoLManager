@@ -11,6 +11,7 @@ namespace LoLManager
         public Xmithie()
         {
             name = "Xmithie";
+            roll = "Jungle";
         }
     }
 }

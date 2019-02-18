@@ -11,6 +11,7 @@ namespace LoLManager
         public Hakuho()
         {
             name = "Hakuho";
+            roll = "Support";
         }
     }
 }

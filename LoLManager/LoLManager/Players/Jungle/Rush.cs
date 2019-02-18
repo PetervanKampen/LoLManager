@@ -11,6 +11,7 @@ namespace LoLManager
         public Rush()
         {
             name = "Rush";
+            roll = "Jungle";
         }
     }
 }

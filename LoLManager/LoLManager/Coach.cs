@@ -9,5 +9,6 @@ namespace LoLManager
     class Coach
     {
         public String name;
+        public String roll = "Coach";
     }
 }

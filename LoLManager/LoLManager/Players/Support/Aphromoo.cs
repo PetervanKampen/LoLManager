@@ -11,6 +11,7 @@ namespace LoLManager
         public Aphromoo()
         {
             name = "Aphromoo";
+            roll = "Support";
         }
     }
 }

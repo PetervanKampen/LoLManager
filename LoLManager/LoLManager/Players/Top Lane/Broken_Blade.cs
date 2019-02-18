@@ -11,6 +11,7 @@ namespace LoLManager
         public Broken_Blade()
         {
             name = "Broken Blade";
+            roll = "Top Lane";
         }
     }
 }

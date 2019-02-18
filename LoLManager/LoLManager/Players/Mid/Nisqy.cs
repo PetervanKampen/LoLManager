@@ -11,6 +11,7 @@ namespace LoLManager
         public Nisqy()
         {
             name = "Nisqy";
+            roll = "Mid Lane";
         }
     }
 }

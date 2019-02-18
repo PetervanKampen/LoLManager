@@ -12,11 +12,16 @@ namespace LoLManager
         {
             teamName = "Team SoloMid";
             logo = global::LoLManager.Properties.Resources.Team_SoloMid;
+            jersey = global::LoLManager.Properties.Resources.Team_SoloMidJersey;
+            money = 10000;
+
+
             topLane = new Broken_Blade();
             jungle = new Akaadian();
             mid = new Bjergsen();
             adc = new Zven();
             support = new Smoothie();
+
             coach = new Zikz();
         }
     }

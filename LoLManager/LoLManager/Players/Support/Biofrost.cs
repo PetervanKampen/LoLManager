@@ -11,6 +11,7 @@ namespace LoLManager
         public Biofrost()
         {
             name = "Biofrost";
+            roll = "Support";
         }
     }
 }

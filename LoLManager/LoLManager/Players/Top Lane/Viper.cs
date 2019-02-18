@@ -11,6 +11,7 @@ namespace LoLManager
         public Viper()
         {
             name = "Viper";
+            roll = "Top Lane";
         }
     }
 }

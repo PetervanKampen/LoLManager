@@ -11,6 +11,7 @@ namespace LoLManager
         public Contractz()
         {
             name = "Contractz";
+            roll = "Jungle";
         }
     }
 }

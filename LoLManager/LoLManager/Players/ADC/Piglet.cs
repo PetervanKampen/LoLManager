@@ -11,6 +11,7 @@ namespace LoLManager
         public Piglet()
         {
             name = "Piglet";
+            roll = "AD Carry";
         }
     }
 }
