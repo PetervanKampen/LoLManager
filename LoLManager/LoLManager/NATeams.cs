@@ -21,7 +21,14 @@ namespace LoLManager
 
         public NATeams()
         {
+            thieves = new Thieves();
             c9 = new Cloud9();
+            cg = new Clutch_Gaming();
+            clg = new Counter_Logic_Gaming();
+            efx = new Echo_Fox();
+            fly = new FlyQuest();
+            ggs = new Golden_Guardians();
+            opt = new OpTic_Gaming();
         }
     }
 }

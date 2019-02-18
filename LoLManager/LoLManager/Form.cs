@@ -28,14 +28,7 @@ namespace LoLManager
 
         public void updateTeamSelectInfo()
         {
-            if (!this.teamInfoPanel.Visible)
-            {
-                this.teamInfoPanel.Visible = true;
-            }
-            else
-            {
-                this.teamInfoPanel.Visible = false;
-            }
+            this.teamInfoPanel.Visible = true;
             this.infoTeamPicture.BackgroundImage = data.selectedTeam.logo;
             this.teamNamesLabel.Text = data.selectedTeam.topLane.name + "\n" + data.selectedTeam.jungle.name + "\n" + data.selectedTeam.mid.name + "\n"
                 + data.selectedTeam.adc.name + "\n" + data.selectedTeam.support.name + "\n\n" + data.selectedTeam.coach.name + "";
@@ -67,60 +60,70 @@ namespace LoLManager
         private void ThievesLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.thieves;
+
             updateTeamSelectInfo();
         }
 
         private void C9Logo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.c9;
+
             updateTeamSelectInfo();     
         }
 
         private void CGLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.cg;
+
             updateTeamSelectInfo();
         }
 
         private void CLGLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.clg;
+
             updateTeamSelectInfo();
         }
 
         private void EchoFoxLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.efx;
+
             updateTeamSelectInfo();
         }
 
         private void FlyQLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.fly;
+
             updateTeamSelectInfo();
         }
 
         private void GoldenGLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.ggs;
+
             updateTeamSelectInfo();
         }
 
         private void OpticLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.opt;
+
             updateTeamSelectInfo();
         }
 
         private void TLLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.tl;
+
             updateTeamSelectInfo();
         }
 
         private void TSMLogo_Click(object sender, EventArgs e)
         {
             data.selectedTeam = data.NATeams.tsm;
+
             updateTeamSelectInfo();
 
         }
