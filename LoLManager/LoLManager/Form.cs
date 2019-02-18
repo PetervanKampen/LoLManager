@@ -23,7 +23,7 @@ namespace LoLManager
 
         public void initOverview()
         {
-            teamNameLabel.Text = data.teamName;          
+            teamNameLabel.Text = data.teamName;
         }
 
         private void lcsPicture_Click(object sender, EventArgs e)
@@ -52,6 +52,7 @@ namespace LoLManager
         private void ThievesLogo_Click(object sender, EventArgs e)
         {
             data.teamName = "100 Thieves";
+            initOverview();
             this.overviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.overviewPanel.Visible = true;
         }
@@ -59,6 +60,7 @@ namespace LoLManager
         private void C9Logo_Click(object sender, EventArgs e)
         {
             data.teamName = "Cloud 9";
+            initOverview();
             this.overviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.overviewPanel.Visible = true;
         }
@@ -66,6 +68,7 @@ namespace LoLManager
         private void CGLogo_Click(object sender, EventArgs e)
         {
             data.teamName = "Clutch Gaming";
+            initOverview();
             this.overviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.overviewPanel.Visible = true;
         }
@@ -73,6 +76,7 @@ namespace LoLManager
         private void CLGLogo_Click(object sender, EventArgs e)
         {
             data.teamName = "Counter Logic Gaming";
+            initOverview();
             this.overviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.overviewPanel.Visible = true;
         }
@@ -80,6 +84,7 @@ namespace LoLManager
         private void EchoFoxLogo_Click(object sender, EventArgs e)
         {
             data.teamName = "Echo Fox";
+            initOverview();
             this.overviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.overviewPanel.Visible = true;
         }
@@ -87,6 +92,7 @@ namespace LoLManager
         private void FlyQLogo_Click(object sender, EventArgs e)
         {
             data.teamName = "FlyQuest";
+            initOverview();
             this.overviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.overviewPanel.Visible = true;
         }
@@ -94,6 +100,7 @@ namespace LoLManager
         private void GoldenGLogo_Click(object sender, EventArgs e)
         {
             data.teamName = "Golden Guardians";
+            initOverview();
             this.overviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.overviewPanel.Visible = true;
         }
@@ -101,6 +108,7 @@ namespace LoLManager
         private void OpticLogo_Click(object sender, EventArgs e)
         {
             data.teamName = "Optic Gaming";
+            initOverview();
             this.overviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.overviewPanel.Visible = true;
         }
@@ -108,6 +116,7 @@ namespace LoLManager
         private void TLLogo_Click(object sender, EventArgs e)
         {
             data.teamName = "Team Liquid";
+            initOverview();
             this.overviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.overviewPanel.Visible = true;
         }
@@ -115,6 +124,7 @@ namespace LoLManager
         private void TSMLogo_Click(object sender, EventArgs e)
         {
             data.teamName = "Team SoloMid";
+            initOverview();
             this.overviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.overviewPanel.Visible = true;
         }
