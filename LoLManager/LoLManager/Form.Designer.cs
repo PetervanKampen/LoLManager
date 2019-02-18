@@ -30,17 +30,12 @@
         {
             this.selectionPanel = new System.Windows.Forms.Panel();
             this.lcsSelectorPanel = new System.Windows.Forms.Panel();
-            this.tsmLabel = new System.Windows.Forms.Label();
-            this.tlLabel = new System.Windows.Forms.Label();
-            this.optLabel = new System.Windows.Forms.Label();
-            this.ggsLabel = new System.Windows.Forms.Label();
-            this.flyLabel = new System.Windows.Forms.Label();
-            this.efxLabel = new System.Windows.Forms.Label();
-            this.clgLabel = new System.Windows.Forms.Label();
-            this.cgLabel = new System.Windows.Forms.Label();
-            this.c9Label = new System.Windows.Forms.Label();
-            this.thievesLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.proceedButton = new System.Windows.Forms.Button();
+            this.teamInfoPanel = new System.Windows.Forms.Panel();
+            this.teamNamesLabel = new System.Windows.Forms.Label();
+            this.rollIndicator = new System.Windows.Forms.Label();
+            this.infoTeamPicture = new System.Windows.Forms.PictureBox();
+            this.backButton = new System.Windows.Forms.Button();
             this.TSMLogo = new System.Windows.Forms.PictureBox();
             this.TLLogo = new System.Windows.Forms.PictureBox();
             this.OpticLogo = new System.Windows.Forms.PictureBox();
@@ -61,6 +56,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.selectionPanel.SuspendLayout();
             this.lcsSelectorPanel.SuspendLayout();
+            this.teamInfoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTeamPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TSMLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TLLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OpticLogo)).BeginInit();
@@ -92,17 +89,9 @@
             // lcsSelectorPanel
             // 
             this.lcsSelectorPanel.BackColor = System.Drawing.Color.Transparent;
-            this.lcsSelectorPanel.Controls.Add(this.tsmLabel);
-            this.lcsSelectorPanel.Controls.Add(this.tlLabel);
-            this.lcsSelectorPanel.Controls.Add(this.optLabel);
-            this.lcsSelectorPanel.Controls.Add(this.ggsLabel);
-            this.lcsSelectorPanel.Controls.Add(this.flyLabel);
-            this.lcsSelectorPanel.Controls.Add(this.efxLabel);
-            this.lcsSelectorPanel.Controls.Add(this.clgLabel);
-            this.lcsSelectorPanel.Controls.Add(this.cgLabel);
-            this.lcsSelectorPanel.Controls.Add(this.c9Label);
-            this.lcsSelectorPanel.Controls.Add(this.thievesLabel);
-            this.lcsSelectorPanel.Controls.Add(this.button1);
+            this.lcsSelectorPanel.Controls.Add(this.proceedButton);
+            this.lcsSelectorPanel.Controls.Add(this.teamInfoPanel);
+            this.lcsSelectorPanel.Controls.Add(this.backButton);
             this.lcsSelectorPanel.Controls.Add(this.TSMLogo);
             this.lcsSelectorPanel.Controls.Add(this.TLLogo);
             this.lcsSelectorPanel.Controls.Add(this.OpticLogo);
@@ -119,135 +108,67 @@
             this.lcsSelectorPanel.TabIndex = 6;
             this.lcsSelectorPanel.Visible = false;
             // 
-            // tsmLabel
+            // proceedButton
             // 
-            this.tsmLabel.AutoSize = true;
-            this.tsmLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsmLabel.Location = new System.Drawing.Point(620, 491);
-            this.tsmLabel.Name = "tsmLabel";
-            this.tsmLabel.Size = new System.Drawing.Size(383, 81);
-            this.tsmLabel.TabIndex = 20;
-            this.tsmLabel.Text = "Top: Broken Blade      ADC: Zven\nJungle: Akaadian     Support: Smoothie\nMid: Bjer" +
-    "gsen        Coach: Zikz";
-            this.tsmLabel.Visible = false;
+            this.proceedButton.Location = new System.Drawing.Point(931, 575);
+            this.proceedButton.Name = "proceedButton";
+            this.proceedButton.Size = new System.Drawing.Size(75, 23);
+            this.proceedButton.TabIndex = 12;
+            this.proceedButton.Text = "proceed";
+            this.proceedButton.UseVisualStyleBackColor = true;
+            this.proceedButton.Click += new System.EventHandler(this.proceedButton_Click);
             // 
-            // tlLabel
+            // teamInfoPanel
             // 
-            this.tlLabel.AutoSize = true;
-            this.tlLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tlLabel.Location = new System.Drawing.Point(620, 369);
-            this.tlLabel.Name = "tlLabel";
-            this.tlLabel.Size = new System.Drawing.Size(344, 81);
-            this.tlLabel.TabIndex = 19;
-            this.tlLabel.Text = "Top: Impact      ADC: Doublelift\nJungle: Xmithie     Support: CoreJJ\nMid: Jensen " +
-    "       Coach: Cain";
-            this.tlLabel.Visible = false;
+            this.teamInfoPanel.BackColor = System.Drawing.Color.White;
+            this.teamInfoPanel.Controls.Add(this.teamNamesLabel);
+            this.teamInfoPanel.Controls.Add(this.rollIndicator);
+            this.teamInfoPanel.Controls.Add(this.infoTeamPicture);
+            this.teamInfoPanel.Location = new System.Drawing.Point(499, 49);
+            this.teamInfoPanel.Name = "teamInfoPanel";
+            this.teamInfoPanel.Size = new System.Drawing.Size(406, 501);
+            this.teamInfoPanel.TabIndex = 11;
+            this.teamInfoPanel.Visible = false;
             // 
-            // optLabel
+            // teamNamesLabel
             // 
-            this.optLabel.AutoSize = true;
-            this.optLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.optLabel.Location = new System.Drawing.Point(620, 257);
-            this.optLabel.Name = "optLabel";
-            this.optLabel.Size = new System.Drawing.Size(347, 81);
-            this.optLabel.TabIndex = 18;
-            this.optLabel.Text = "Top: Dhokla      ADC: Arrow\nJungle: Meteos     Support: Big\nMid: Crown        Coa" +
-    "ch: Zaboutine";
-            this.optLabel.Visible = false;
+            this.teamNamesLabel.AutoSize = true;
+            this.teamNamesLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teamNamesLabel.Location = new System.Drawing.Point(123, 232);
+            this.teamNamesLabel.Name = "teamNamesLabel";
+            this.teamNamesLabel.Size = new System.Drawing.Size(115, 189);
+            this.teamNamesLabel.TabIndex = 2;
+            this.teamNamesLabel.Text = "Ssumday\nAnda\nHuhi\nBang\nAphromoo\n\nProlly";
             // 
-            // ggsLabel
+            // rollIndicator
             // 
-            this.ggsLabel.AutoSize = true;
-            this.ggsLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ggsLabel.Location = new System.Drawing.Point(620, 150);
-            this.ggsLabel.Name = "ggsLabel";
-            this.ggsLabel.Size = new System.Drawing.Size(348, 81);
-            this.ggsLabel.TabIndex = 17;
-            this.ggsLabel.Text = "Top: Hauntzer      ADC: Deftly\nJungle: Contractz     Support: Olleh\nMid: Froggen " +
-    "       Coach: Inero";
-            this.ggsLabel.Visible = false;
+            this.rollIndicator.AutoSize = true;
+            this.rollIndicator.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rollIndicator.Location = new System.Drawing.Point(15, 232);
+            this.rollIndicator.Name = "rollIndicator";
+            this.rollIndicator.Size = new System.Drawing.Size(93, 189);
+            this.rollIndicator.TabIndex = 1;
+            this.rollIndicator.Text = "Top:\nJungle:\nMid:\nADC:\nSupport:\n\nCoach:";
             // 
-            // flyLabel
+            // infoTeamPicture
             // 
-            this.flyLabel.AutoSize = true;
-            this.flyLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flyLabel.Location = new System.Drawing.Point(620, 40);
-            this.flyLabel.Name = "flyLabel";
-            this.flyLabel.Size = new System.Drawing.Size(324, 81);
-            this.flyLabel.TabIndex = 16;
-            this.flyLabel.Text = "Top: Viper      ADC: WildTurtle\nJungle: Santorin     Support: JayJ\nMid: Pobelter " +
-    "       Coach: Invert";
-            this.flyLabel.Visible = false;
+            this.infoTeamPicture.BackgroundImage = global::LoLManager.Properties.Resources._100T;
+            this.infoTeamPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.infoTeamPicture.Location = new System.Drawing.Point(20, 23);
+            this.infoTeamPicture.Name = "infoTeamPicture";
+            this.infoTeamPicture.Size = new System.Drawing.Size(237, 206);
+            this.infoTeamPicture.TabIndex = 0;
+            this.infoTeamPicture.TabStop = false;
             // 
-            // efxLabel
+            // backButton
             // 
-            this.efxLabel.AutoSize = true;
-            this.efxLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.efxLabel.Location = new System.Drawing.Point(138, 490);
-            this.efxLabel.Name = "efxLabel";
-            this.efxLabel.Size = new System.Drawing.Size(327, 81);
-            this.efxLabel.TabIndex = 15;
-            this.efxLabel.Text = "Top: Solo      ADC: Apollo\nJungle: Rush     Support: Hakuho\nMid: Fenix        Coa" +
-    "ch: SSong";
-            this.efxLabel.Visible = false;
-            // 
-            // clgLabel
-            // 
-            this.clgLabel.AutoSize = true;
-            this.clgLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clgLabel.Location = new System.Drawing.Point(138, 368);
-            this.clgLabel.Name = "clgLabel";
-            this.clgLabel.Size = new System.Drawing.Size(385, 81);
-            this.clgLabel.TabIndex = 14;
-            this.clgLabel.Text = "Top: Darshan      ADC: Stixxay\nJungle: Wiggily     Support: Biofrost\nMid: PowerOf" +
-    "Evil        Coach: Weldon";
-            this.clgLabel.Visible = false;
-            // 
-            // cgLabel
-            // 
-            this.cgLabel.AutoSize = true;
-            this.cgLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cgLabel.Location = new System.Drawing.Point(138, 258);
-            this.cgLabel.Name = "cgLabel";
-            this.cgLabel.Size = new System.Drawing.Size(352, 81);
-            this.cgLabel.TabIndex = 13;
-            this.cgLabel.Text = "Top: Huni      ADC: Piglet\nJungle: LirA     Support: Vulcan\nMid: Damonte        C" +
-    "oach: mcscrag";
-            this.cgLabel.Visible = false;
-            // 
-            // c9Label
-            // 
-            this.c9Label.AutoSize = true;
-            this.c9Label.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c9Label.Location = new System.Drawing.Point(135, 149);
-            this.c9Label.Name = "c9Label";
-            this.c9Label.Size = new System.Drawing.Size(376, 81);
-            this.c9Label.TabIndex = 12;
-            this.c9Label.Text = "Top: Licorice      ADC: Sneaky\nJungle: Svenskeren     Support: Zeyzal\nMid: Nisqy " +
-    "       Coach: Reapered";
-            this.c9Label.Visible = false;
-            // 
-            // thievesLabel
-            // 
-            this.thievesLabel.AutoSize = true;
-            this.thievesLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thievesLabel.Location = new System.Drawing.Point(135, 39);
-            this.thievesLabel.Name = "thievesLabel";
-            this.thievesLabel.Size = new System.Drawing.Size(355, 81);
-            this.thievesLabel.TabIndex = 11;
-            this.thievesLabel.Text = "Top: Ssumday      ADC: Bang\nJungle: Anda     Support: Aphromoo\nMid: Huhi        C" +
-    "oach: Prolly";
-            this.thievesLabel.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(937, 575);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.backButton.Location = new System.Drawing.Point(830, 575);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(75, 23);
+            this.backButton.TabIndex = 10;
+            this.backButton.Text = "back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // TSMLogo
             // 
@@ -255,14 +176,12 @@
             this.TSMLogo.BackgroundImage = global::LoLManager.Properties.Resources.Team_SoloMid;
             this.TSMLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TSMLogo.InitialImage = global::LoLManager.Properties.Resources._100T;
-            this.TSMLogo.Location = new System.Drawing.Point(529, 490);
+            this.TSMLogo.Location = new System.Drawing.Point(250, 490);
             this.TSMLogo.Name = "TSMLogo";
             this.TSMLogo.Size = new System.Drawing.Size(80, 80);
             this.TSMLogo.TabIndex = 9;
             this.TSMLogo.TabStop = false;
             this.TSMLogo.Click += new System.EventHandler(this.TSMLogo_Click);
-            this.TSMLogo.MouseEnter += new System.EventHandler(this.tsm_MouseEnter);
-            this.TSMLogo.MouseLeave += new System.EventHandler(this.tsm_MouseLeave);
             // 
             // TLLogo
             // 
@@ -270,14 +189,12 @@
             this.TLLogo.BackgroundImage = global::LoLManager.Properties.Resources.Team_Liquid;
             this.TLLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TLLogo.InitialImage = global::LoLManager.Properties.Resources._100T;
-            this.TLLogo.Location = new System.Drawing.Point(529, 369);
+            this.TLLogo.Location = new System.Drawing.Point(250, 369);
             this.TLLogo.Name = "TLLogo";
             this.TLLogo.Size = new System.Drawing.Size(80, 80);
             this.TLLogo.TabIndex = 8;
             this.TLLogo.TabStop = false;
             this.TLLogo.Click += new System.EventHandler(this.TLLogo_Click);
-            this.TLLogo.MouseEnter += new System.EventHandler(this.tl_MouseEnter);
-            this.TLLogo.MouseLeave += new System.EventHandler(this.tl_MouseLeave);
             // 
             // OpticLogo
             // 
@@ -285,14 +202,12 @@
             this.OpticLogo.BackgroundImage = global::LoLManager.Properties.Resources.OpTic_Gaming;
             this.OpticLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.OpticLogo.InitialImage = global::LoLManager.Properties.Resources._100T;
-            this.OpticLogo.Location = new System.Drawing.Point(514, 258);
+            this.OpticLogo.Location = new System.Drawing.Point(250, 269);
             this.OpticLogo.Name = "OpticLogo";
             this.OpticLogo.Size = new System.Drawing.Size(95, 80);
             this.OpticLogo.TabIndex = 7;
             this.OpticLogo.TabStop = false;
             this.OpticLogo.Click += new System.EventHandler(this.OpticLogo_Click);
-            this.OpticLogo.MouseEnter += new System.EventHandler(this.opt_MouseEnter);
-            this.OpticLogo.MouseLeave += new System.EventHandler(this.opt_MouseLeave);
             // 
             // GoldenGLogo
             // 
@@ -300,14 +215,12 @@
             this.GoldenGLogo.BackgroundImage = global::LoLManager.Properties.Resources.Golden_Guardians;
             this.GoldenGLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.GoldenGLogo.InitialImage = global::LoLManager.Properties.Resources._100T;
-            this.GoldenGLogo.Location = new System.Drawing.Point(529, 149);
+            this.GoldenGLogo.Location = new System.Drawing.Point(250, 157);
             this.GoldenGLogo.Name = "GoldenGLogo";
             this.GoldenGLogo.Size = new System.Drawing.Size(80, 80);
             this.GoldenGLogo.TabIndex = 6;
             this.GoldenGLogo.TabStop = false;
             this.GoldenGLogo.Click += new System.EventHandler(this.GoldenGLogo_Click);
-            this.GoldenGLogo.MouseEnter += new System.EventHandler(this.ggs_MouseEnter);
-            this.GoldenGLogo.MouseLeave += new System.EventHandler(this.ggs_MouseLeave);
             // 
             // FlyQLogo
             // 
@@ -315,14 +228,12 @@
             this.FlyQLogo.BackgroundImage = global::LoLManager.Properties.Resources.FlyQuest;
             this.FlyQLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.FlyQLogo.InitialImage = global::LoLManager.Properties.Resources._100T;
-            this.FlyQLogo.Location = new System.Drawing.Point(529, 40);
+            this.FlyQLogo.Location = new System.Drawing.Point(250, 40);
             this.FlyQLogo.Name = "FlyQLogo";
             this.FlyQLogo.Size = new System.Drawing.Size(80, 80);
             this.FlyQLogo.TabIndex = 5;
             this.FlyQLogo.TabStop = false;
             this.FlyQLogo.Click += new System.EventHandler(this.FlyQLogo_Click);
-            this.FlyQLogo.MouseEnter += new System.EventHandler(this.fly_MouseEnter);
-            this.FlyQLogo.MouseLeave += new System.EventHandler(this.fly_MouseLeave);
             // 
             // EchoFoxLogo
             // 
@@ -336,8 +247,6 @@
             this.EchoFoxLogo.TabIndex = 4;
             this.EchoFoxLogo.TabStop = false;
             this.EchoFoxLogo.Click += new System.EventHandler(this.EchoFoxLogo_Click);
-            this.EchoFoxLogo.MouseEnter += new System.EventHandler(this.efx_MouseEnter);
-            this.EchoFoxLogo.MouseLeave += new System.EventHandler(this.efx_MouseLeave);
             // 
             // CLGLogo
             // 
@@ -345,14 +254,12 @@
             this.CLGLogo.BackgroundImage = global::LoLManager.Properties.Resources.CLG;
             this.CLGLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CLGLogo.InitialImage = global::LoLManager.Properties.Resources._100T;
-            this.CLGLogo.Location = new System.Drawing.Point(25, 369);
+            this.CLGLogo.Location = new System.Drawing.Point(30, 373);
             this.CLGLogo.Name = "CLGLogo";
             this.CLGLogo.Size = new System.Drawing.Size(100, 80);
             this.CLGLogo.TabIndex = 3;
             this.CLGLogo.TabStop = false;
             this.CLGLogo.Click += new System.EventHandler(this.CLGLogo_Click);
-            this.CLGLogo.MouseEnter += new System.EventHandler(this.clg_MouseEnter);
-            this.CLGLogo.MouseLeave += new System.EventHandler(this.clg_MouseLeave);
             // 
             // CGLogo
             // 
@@ -360,14 +267,12 @@
             this.CGLogo.BackgroundImage = global::LoLManager.Properties.Resources.Clutch_Gaming;
             this.CGLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CGLogo.InitialImage = global::LoLManager.Properties.Resources._100T;
-            this.CGLogo.Location = new System.Drawing.Point(45, 260);
+            this.CGLogo.Location = new System.Drawing.Point(30, 269);
             this.CGLogo.Name = "CGLogo";
             this.CGLogo.Size = new System.Drawing.Size(80, 80);
             this.CGLogo.TabIndex = 2;
             this.CGLogo.TabStop = false;
             this.CGLogo.Click += new System.EventHandler(this.CGLogo_Click);
-            this.CGLogo.MouseEnter += new System.EventHandler(this.cg_MouseEnter);
-            this.CGLogo.MouseLeave += new System.EventHandler(this.cg_MouseLeave);
             // 
             // C9Logo
             // 
@@ -375,14 +280,12 @@
             this.C9Logo.BackgroundImage = global::LoLManager.Properties.Resources.C9;
             this.C9Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.C9Logo.InitialImage = global::LoLManager.Properties.Resources._100T;
-            this.C9Logo.Location = new System.Drawing.Point(25, 150);
+            this.C9Logo.Location = new System.Drawing.Point(30, 157);
             this.C9Logo.Name = "C9Logo";
             this.C9Logo.Size = new System.Drawing.Size(100, 80);
             this.C9Logo.TabIndex = 1;
             this.C9Logo.TabStop = false;
             this.C9Logo.Click += new System.EventHandler(this.C9Logo_Click);
-            this.C9Logo.MouseEnter += new System.EventHandler(this.c9_MouseEnter);
-            this.C9Logo.MouseLeave += new System.EventHandler(this.c9_MouseLeave);
             // 
             // ThievesLogo
             // 
@@ -396,8 +299,6 @@
             this.ThievesLogo.TabIndex = 0;
             this.ThievesLogo.TabStop = false;
             this.ThievesLogo.Click += new System.EventHandler(this.ThievesLogo_Click);
-            this.ThievesLogo.MouseEnter += new System.EventHandler(this.thieves_MouseEnter);
-            this.ThievesLogo.MouseLeave += new System.EventHandler(this.thieves_MouseLeave);
             // 
             // lcsLabel
             // 
@@ -463,7 +364,7 @@
             this.overviewPanel.BackColor = System.Drawing.Color.Transparent;
             this.overviewPanel.Controls.Add(this.teamNameLabel);
             this.overviewPanel.Controls.Add(this.button2);
-            this.overviewPanel.Location = new System.Drawing.Point(31, 629);
+            this.overviewPanel.Location = new System.Drawing.Point(23, 656);
             this.overviewPanel.Name = "overviewPanel";
             this.overviewPanel.Size = new System.Drawing.Size(1012, 611);
             this.overviewPanel.TabIndex = 1;
@@ -502,7 +403,9 @@
             this.selectionPanel.ResumeLayout(false);
             this.selectionPanel.PerformLayout();
             this.lcsSelectorPanel.ResumeLayout(false);
-            this.lcsSelectorPanel.PerformLayout();
+            this.teamInfoPanel.ResumeLayout(false);
+            this.teamInfoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTeamPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TSMLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TLLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OpticLogo)).EndInit();
@@ -540,107 +443,7 @@
 
         private void lcs_MouseLeave(object sender, System.EventArgs e)
         {
-            this.lcsLabel.Visible = false;
-        }
-
-        private void tsm_MouseEnter(object sender, System.EventArgs e)
-        {
-            this.tsmLabel.Visible = true;
-        }
-
-        private void tsm_MouseLeave(object sender, System.EventArgs e)
-        {
-            this.tsmLabel.Visible = false;
-        }
-
-        private void tl_MouseEnter(object sender, System.EventArgs e)
-        {
-            this.tlLabel.Visible = true;
-        }
-
-        private void tl_MouseLeave(object sender, System.EventArgs e)
-        {
-            this.tlLabel.Visible = false;
-        }
-
-        private void opt_MouseEnter(object sender, System.EventArgs e)
-        {
-            this.optLabel.Visible = true;
-        }
-
-        private void opt_MouseLeave(object sender, System.EventArgs e)
-        {
-            this.optLabel.Visible = false;
-        }
-
-        private void ggs_MouseEnter(object sender, System.EventArgs e)
-        {
-            this.ggsLabel.Visible = true;
-        }
-
-        private void ggs_MouseLeave(object sender, System.EventArgs e)
-        {
-            this.ggsLabel.Visible = false;
-        }
-
-        private void fly_MouseEnter(object sender, System.EventArgs e)
-        {
-            this.flyLabel.Visible = true;
-        }
-
-        private void fly_MouseLeave(object sender, System.EventArgs e)
-        {
-            this.flyLabel.Visible = false;
-        }
-
-        private void efx_MouseEnter(object sender, System.EventArgs e)
-        {
-            this.efxLabel.Visible = true;
-        }
-
-        private void efx_MouseLeave(object sender, System.EventArgs e)
-        {
-            this.efxLabel.Visible = false;
-        }
-
-        private void clg_MouseEnter(object sender, System.EventArgs e)
-        {
-            this.clgLabel.Visible = true;
-        }
-
-        private void clg_MouseLeave(object sender, System.EventArgs e)
-        {
-            this.clgLabel.Visible = false;
-        }
-
-        private void cg_MouseEnter(object sender, System.EventArgs e)
-        {
-            this.cgLabel.Visible = true;
-        }
-
-        private void cg_MouseLeave(object sender, System.EventArgs e)
-        {
-            this.cgLabel.Visible = false;
-        }
-
-        private void c9_MouseEnter(object sender, System.EventArgs e)
-        {
-            this.c9Label.Visible = true;
-        }
-
-        private void c9_MouseLeave(object sender, System.EventArgs e)
-        {
-            this.c9Label.Visible = false;
-        }
-
-        private void thieves_MouseEnter(object sender, System.EventArgs e)
-        {
-            this.thievesLabel.Visible = true;
-        }
-
-        private void thieves_MouseLeave(object sender, System.EventArgs e)
-        {
-            this.thievesLabel.Visible = false;
+            this.lcsLabel.ForeColor = System.Drawing.SystemColors.ControlText;
         }
 
         private System.Windows.Forms.Panel selectionPanel;
@@ -660,20 +463,15 @@
         private System.Windows.Forms.PictureBox CLGLogo;
         private System.Windows.Forms.PictureBox CGLogo;
         private System.Windows.Forms.PictureBox C9Logo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Panel overviewPanel;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label tsmLabel;
-        private System.Windows.Forms.Label tlLabel;
-        private System.Windows.Forms.Label optLabel;
-        private System.Windows.Forms.Label ggsLabel;
-        private System.Windows.Forms.Label flyLabel;
-        private System.Windows.Forms.Label efxLabel;
-        private System.Windows.Forms.Label clgLabel;
-        private System.Windows.Forms.Label cgLabel;
-        private System.Windows.Forms.Label c9Label;
-        private System.Windows.Forms.Label thievesLabel;
         private System.Windows.Forms.Label teamNameLabel;
+        private System.Windows.Forms.Panel teamInfoPanel;
+        private System.Windows.Forms.Label rollIndicator;
+        private System.Windows.Forms.PictureBox infoTeamPicture;
+        private System.Windows.Forms.Label teamNamesLabel;
+        private System.Windows.Forms.Button proceedButton;
     }
 }
 

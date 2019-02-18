@@ -46,6 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coaches\Reapered.cs" />
+    <Compile Include="NATeams.cs" />
+    <Compile Include="Players\ADC\Sneaky.cs" />
+    <Compile Include="Players\Jungle\Svenskeren.cs" />
+    <Compile Include="Players\Mid\Nisqy.cs" />
+    <Compile Include="Players\Support\Zeyzal.cs" />
+    <Compile Include="Players\Top Lane\Licorice.cs" />
+    <Compile Include="Teams\Cloud9.cs" />
+    <Compile Include="Coach.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="Form.cs">
       <SubType>Form</SubType>
@@ -53,8 +62,10 @@
     <Compile Include="Form.Designer.cs">
       <DependentUpon>Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Team.cs" />
     <EmbeddedResource Include="Form.resx">
       <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +128,7 @@
   <ItemGroup>
     <None Include="Images\Team_SoloMid.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
