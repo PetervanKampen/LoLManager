@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace LoLManager
 {
-    class Data
+    class Huhi : Player
     {
-        public String leagueName;
-        public Team selectedTeam;
-        public NATeams NATeams = new NATeams();
+        public Huhi()
+        {
+            name = "Huhi";
+            roll = "Mid Lane";
+        }
     }
 }

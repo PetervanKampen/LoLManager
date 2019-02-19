@@ -118,40 +118,70 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="CLG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\CLG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Clutch Gaming" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Clutch Gaming.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lcs Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\lcs Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="100T" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\100T.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="C9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\C9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Echo Fox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Echo Fox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Team_Liquid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Team_Liquid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lcs Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\lcs Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Team_LiquidJersey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Team_LiquidJersey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CGJersey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\CGJersey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C9Jersey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\C9Jersey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Golden_Guardians" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Golden_Guardians.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OpTic_Gaming" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\OpTic_Gaming.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OpTic_GamingJersey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\OpTic_GamingJersey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Echo FoxJersey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Echo FoxJersey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Golden_GuardiansJersey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Golden_GuardiansJersey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\C9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Team_SoloMid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Team_SoloMid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CLGJersey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\CLGJersey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CLG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\CLG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FlyQuest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\FlyQuest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Clutch Gaming" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Clutch Gaming.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FlyQuestJersey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\FlyQuestJersey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="100TJersey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\100TJersey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lec Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\lec Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Echo Fox" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Echo Fox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OpTic_Gaming" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\OpTic_Gaming.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Team_SoloMid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Team_SoloMid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="100T" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\100T.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Team_SoloMidJersey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Team_SoloMidJersey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

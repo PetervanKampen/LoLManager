@@ -46,6 +46,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coaches\Cain.cs" />
+    <Compile Include="Coaches\Inero.cs" />
+    <Compile Include="Coaches\Invert.cs" />
+    <Compile Include="Coaches\mcscrag.cs" />
+    <Compile Include="Coaches\Prolly.cs" />
+    <Compile Include="Coaches\Reapered.cs" />
+    <Compile Include="Coaches\SSong.cs" />
+    <Compile Include="Coaches\Weldon.cs" />
+    <Compile Include="Coaches\Zaboutine.cs" />
+    <Compile Include="Coaches\Zikz.cs" />
+    <Compile Include="NATeams.cs" />
+    <Compile Include="Players\ADC\Apollo.cs" />
+    <Compile Include="Players\ADC\Arrow.cs" />
+    <Compile Include="Players\ADC\Bang.cs" />
+    <Compile Include="Players\ADC\Deftly.cs" />
+    <Compile Include="Players\ADC\Doublelift.cs" />
+    <Compile Include="Players\ADC\Piglet.cs" />
+    <Compile Include="Players\ADC\Sneaky.cs" />
+    <Compile Include="Players\ADC\Stixxay.cs" />
+    <Compile Include="Players\ADC\WildTurtle.cs" />
+    <Compile Include="Players\ADC\Zven.cs" />
+    <Compile Include="Players\Jungle\Akaadian.cs" />
+    <Compile Include="Players\Jungle\Anda.cs" />
+    <Compile Include="Players\Jungle\Contractz.cs" />
+    <Compile Include="Players\Jungle\LirA.cs" />
+    <Compile Include="Players\Jungle\Meteos.cs" />
+    <Compile Include="Players\Jungle\Rush.cs" />
+    <Compile Include="Players\Jungle\Santorin.cs" />
+    <Compile Include="Players\Jungle\Svenskeren.cs" />
+    <Compile Include="Players\Jungle\Wiggily.cs" />
+    <Compile Include="Players\Jungle\Xmithie.cs" />
+    <Compile Include="Players\Mid\Bjergsen.cs" />
+    <Compile Include="Players\Mid\Crown.cs" />
+    <Compile Include="Players\Mid\Damonte.cs" />
+    <Compile Include="Players\Mid\Fenix.cs" />
+    <Compile Include="Players\Mid\Froggen.cs" />
+    <Compile Include="Players\Mid\Huhi.cs" />
+    <Compile Include="Players\Mid\Jensen.cs" />
+    <Compile Include="Players\Mid\Nisqy.cs" />
+    <Compile Include="Players\Mid\Pobelter.cs" />
+    <Compile Include="Players\Mid\PowerOfEvil.cs" />
+    <Compile Include="Players\Support\Aphromoo.cs" />
+    <Compile Include="Players\Support\Big.cs" />
+    <Compile Include="Players\Support\Biofrost.cs" />
+    <Compile Include="Players\Support\CoreJJ.cs" />
+    <Compile Include="Players\Support\Hakuho.cs" />
+    <Compile Include="Players\Support\JayJ.cs" />
+    <Compile Include="Players\Support\Olleh.cs" />
+    <Compile Include="Players\Support\Smoothie.cs" />
+    <Compile Include="Players\Support\Vulcan.cs" />
+    <Compile Include="Players\Support\Zeyzal.cs" />
+    <Compile Include="Players\Top Lane\Broken_Blade.cs" />
+    <Compile Include="Players\Top Lane\Darshan.cs" />
+    <Compile Include="Players\Top Lane\Dhokla.cs" />
+    <Compile Include="Players\Top Lane\Hauntzer.cs" />
+    <Compile Include="Players\Top Lane\Huni.cs" />
+    <Compile Include="Players\Top Lane\Impact.cs" />
+    <Compile Include="Players\Top Lane\Licorice.cs" />
+    <Compile Include="Players\Top Lane\Solo.cs" />
+    <Compile Include="Players\Top Lane\Ssumday.cs" />
+    <Compile Include="Players\Top Lane\Viper.cs" />
+    <Compile Include="Teams\Cloud9.cs" />
+    <Compile Include="Coach.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="Form.cs">
       <SubType>Form</SubType>
@@ -53,8 +116,19 @@
     <Compile Include="Form.Designer.cs">
       <DependentUpon>Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Team.cs" />
+    <Compile Include="Teams\Clutch_Gaming.cs" />
+    <Compile Include="Teams\Counter_Logic_Gaming.cs" />
+    <Compile Include="Teams\Echo_Fox.cs" />
+    <Compile Include="Teams\FlyQuest.cs" />
+    <Compile Include="Teams\Golden_Guardians.cs" />
+    <Compile Include="Teams\OpTic_Gaming.cs" />
+    <Compile Include="Teams\Team_Liquid.cs" />
+    <Compile Include="Teams\Team_SoloMid.cs" />
+    <Compile Include="Teams\Thieves.cs" />
     <EmbeddedResource Include="Form.resx">
       <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +190,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Team_SoloMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\100TJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\C9Jersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CGJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CLGJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Echo FoxJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\FlyQuestJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Golden_GuardiansJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\OpTic_GamingJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Team_LiquidJersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Team_SoloMidJersey.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

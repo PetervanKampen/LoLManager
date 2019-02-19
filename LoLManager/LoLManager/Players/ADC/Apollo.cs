@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LoLManager
-{
-    class Data
+{ 
+    class Apollo : Player
     {
-        public String leagueName;
-        public Team selectedTeam;
-        public NATeams NATeams = new NATeams();
+        public Apollo()
+        {
+            name = "Apollo";
+            roll = "AD Carry";
+        }
     }
 }

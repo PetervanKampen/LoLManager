@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace LoLManager
 {
-    class Data
+    class Invert : Coach
     {
-        public String leagueName;
-        public Team selectedTeam;
-        public NATeams NATeams = new NATeams();
+        public Invert()
+        {
+            name = "Invert";
+        }
     }
 }
