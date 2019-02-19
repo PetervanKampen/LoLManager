@@ -11,6 +11,7 @@ namespace LoLManager
         public FlyQuest()
         {
             teamName = "FlyQuest";
+            shortName = teamName;
             logo = global::LoLManager.Properties.Resources.FlyQuest;
             jersey = global::LoLManager.Properties.Resources.FlyQuestJersey;
             money = 10000;

@@ -11,6 +11,7 @@ namespace LoLManager
         public Cloud9()
         {
             teamName = "Cloud 9";
+            shortName = teamName;
             logo = global::LoLManager.Properties.Resources.C9;
             jersey = global::LoLManager.Properties.Resources.C9Jersey;
             money = 15000;

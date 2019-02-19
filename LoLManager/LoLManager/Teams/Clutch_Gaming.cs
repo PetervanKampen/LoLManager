@@ -11,6 +11,7 @@ namespace LoLManager
         public Clutch_Gaming()
         {
             teamName = "Clutch Gaming";
+            shortName = teamName;
             logo = global::LoLManager.Properties.Resources.Clutch_Gaming;
             jersey = global::LoLManager.Properties.Resources.CGJersey;
             money = 10000;

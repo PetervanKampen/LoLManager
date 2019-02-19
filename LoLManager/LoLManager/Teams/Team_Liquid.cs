@@ -11,6 +11,7 @@ namespace LoLManager
         public Team_Liquid()
         {
             teamName = "Team Liquid";
+            shortName = teamName;
             logo = global::LoLManager.Properties.Resources.Team_Liquid;
             jersey = global::LoLManager.Properties.Resources.Team_LiquidJersey;
             money = 10000;

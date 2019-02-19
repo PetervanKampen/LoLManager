@@ -11,6 +11,7 @@ namespace LoLManager
         public OpTic_Gaming()
         {
             teamName = "OpTic Gaming";
+            shortName = teamName;
             logo = global::LoLManager.Properties.Resources.OpTic_Gaming;
             jersey = global::LoLManager.Properties.Resources.OpTic_GamingJersey;
             money = 10000;

@@ -10,7 +10,8 @@ namespace LoLManager
     {
         public Counter_Logic_Gaming()
         {
-            teamName = "Counter Logic\nGaming";
+            teamName = "Counter Logic Gaming";
+            shortName = "CLG";
             logo = global::LoLManager.Properties.Resources.CLG;
             jersey = global::LoLManager.Properties.Resources.CLGJersey;
             money = 10000;

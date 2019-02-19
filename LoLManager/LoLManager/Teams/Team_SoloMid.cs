@@ -11,6 +11,7 @@ namespace LoLManager
         public Team_SoloMid()
         {
             teamName = "Team SoloMid";
+            shortName = "TSM";
             logo = global::LoLManager.Properties.Resources.Team_SoloMid;
             jersey = global::LoLManager.Properties.Resources.Team_SoloMidJersey;
             money = 10000;

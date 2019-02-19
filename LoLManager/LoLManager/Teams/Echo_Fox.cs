@@ -11,6 +11,7 @@ namespace LoLManager
         public Echo_Fox()
         {
             teamName = "Echo Fox";
+            shortName = teamName;
             logo = global::LoLManager.Properties.Resources.Echo_Fox;
             jersey = global::LoLManager.Properties.Resources.Echo_FoxJersey;
             money = 10000;

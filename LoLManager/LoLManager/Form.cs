@@ -23,14 +23,29 @@ namespace LoLManager
 
         public void initOverview()
         {
-            teamNameLabel.Text = data.selectedTeam.teamName;
-            if(data.selectedTeam.teamName.Length > 12)
+            teamNameLabel.Text = data.selectedTeam.shortName;
+            if(data.selectedTeam.shortName.Length > 12)
             {
                 teamNameLabel.Font = new System.Drawing.Font("Times New Roman", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             }
             teamJerseyImage.BackgroundImage = data.selectedTeam.jersey;
             moneyLabel.Text = "$"+data.selectedTeam.money.ToString();
             upcomingLogoA.BackgroundImage = data.selectedTeam.logo;
+            playingTopPlayer.Text = data.selectedTeam.topLane.name;
+            playingJungPlayer.Text = data.selectedTeam.jungle.name;
+            playingMidPlayer.Text = data.selectedTeam.mid.name;
+            playingADCPlayer.Text = data.selectedTeam.adc.name;
+            playingSupPlayer.Text = data.selectedTeam.support.name;
+            homePanel.Location = new System.Drawing.Point(200, 67);
+            homePanel.Size = new System.Drawing.Size(811, 543);
+            homePanel.Visible = true;
+            
+        }
+
+        public void initStandings()
+        {
+            standingsFirstTeam.Text = data.NATeams.clg.teamName;
+            standingsSecondTeam.Text = data.NATeams.ggs.teamName;
         }
 
         public void updateTeamSelectInfo()
@@ -39,6 +54,18 @@ namespace LoLManager
             this.infoTeamPicture.BackgroundImage = data.selectedTeam.logo;
             this.teamNamesLabel.Text = data.selectedTeam.topLane.name + "\n" + data.selectedTeam.jungle.name + "\n" + data.selectedTeam.mid.name + "\n"
                 + data.selectedTeam.adc.name + "\n" + data.selectedTeam.support.name + "\n\n" + data.selectedTeam.coach.name + "";
+        }
+
+        public void overviewColorReset()
+        {
+            upcomingGameButton.BackColor = System.Drawing.Color.LightBlue;
+            staffButton.BackColor = System.Drawing.Color.LightBlue;
+            financesButton.BackColor = System.Drawing.Color.LightBlue;
+            exitButton.BackColor = System.Drawing.Color.LightBlue;
+            homeButton.BackColor = System.Drawing.Color.LightBlue;
+            standingsButton.BackColor = System.Drawing.Color.LightBlue;
+            strategyButton.BackColor = System.Drawing.Color.LightBlue;
+            scheduleButton.BackColor = System.Drawing.Color.LightBlue;
         }
 
         private void lcsPicture_Click(object sender, EventArgs e)
@@ -122,7 +149,6 @@ namespace LoLManager
         {
             data.selectedTeam = data.NATeams.tsm;
             updateTeamSelectInfo();
-
         }
 
         private void proceedButton_Click(object sender, EventArgs e)
@@ -134,7 +160,23 @@ namespace LoLManager
 
         private void homeButton_Click(object sender, EventArgs e)
         {
+            homePanel.Location = new System.Drawing.Point(200, 67);
+            homePanel.Size = new System.Drawing.Size(811, 543);
+            overviewColorReset();
+            homeButton.BackColor = System.Drawing.Color.SteelBlue;
             homePanel.Visible = true;
+            standingPanel.Visible = false;
+        }
+
+        private void standingsButton_Click(object sender, EventArgs e)
+        {
+            initStandings();
+            standingPanel.Location = new System.Drawing.Point(200, 67);
+            standingPanel.Size = new System.Drawing.Size(811, 543);
+            overviewColorReset();
+            standingsButton.BackColor = System.Drawing.Color.SteelBlue;
+            standingPanel.Visible = true;
+            homePanel.Visible = false;
         }
     }
 }

@@ -11,6 +11,7 @@ namespace LoLManager
         public Golden_Guardians()
         {
             teamName = "Golden Guardians";
+            shortName = teamName;
             logo = global::LoLManager.Properties.Resources.Golden_Guardians;
             jersey = global::LoLManager.Properties.Resources.Golden_GuardiansJersey;
             money = 10000;

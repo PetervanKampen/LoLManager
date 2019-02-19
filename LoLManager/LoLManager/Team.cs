@@ -9,8 +9,10 @@ namespace LoLManager
     class Team
     {
         public String teamName;
+        public String shortName;
         public System.Drawing.Bitmap logo;
         public System.Drawing.Bitmap jersey;
+
         public int money;
 
         public Player topLane;
@@ -20,5 +22,8 @@ namespace LoLManager
         public Player support;
 
         public Coach coach;
+
+        public int wins = 0;
+        public int losses = 0;
     }
 }
